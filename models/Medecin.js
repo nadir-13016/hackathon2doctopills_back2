@@ -22,6 +22,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER
         }
 
-    }, {} );
+    }, 
+    // Medecin.associate = models => {
+    //     Medecin.belongsTo(models.User)
+    // }
+    );
     return Medecin;
 }

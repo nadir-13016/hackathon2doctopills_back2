@@ -11,6 +11,8 @@ app.get('/', (req, res)=> {
     res.send('Inch Allah ça marche ')
 })
 
+require('./routes/userRouter')(app);
+
 models  
     .sequelize
     .sync()

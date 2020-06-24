@@ -14,6 +14,10 @@ module.exports = (sequelize, DataTypes) => {
         order_renew:{ 
             type: DataTypes.BOOLEAN
           },
-    }, {} );
+    }, 
+    // Order.associate = models => {
+    //     Order.belongsTo(models.User)
+    // }
+     );
     return Order;
 }

@@ -27,8 +27,11 @@ module.exports = (sequelize, DataTypes) => {
         pills_night: {
             type : DataTypes.BOOLEAN
         },
-    }, {}
+    }, 
 
+    // Pills.associate = models => {
+    //     Pills.belongsTo(models.User)
+    // }
     );
     return Pills;
 }
