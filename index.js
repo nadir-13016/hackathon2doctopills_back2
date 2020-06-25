@@ -12,6 +12,13 @@ app.get('/', (req, res)=> {
 })
 
 require('./routes/userRouter')(app);
+require('./routes/InfoPatientRouter')(app);
+require('./routes/DataPatientRouter')(app);
+require('./routes/MedecinRouter')(app);
+require('./routes/OrderRouter')(app);
+require('./routes/PillsRouter')(app);
+require('./routes/RdvRouter')(app);
+
 
 models  
     .sequelize
