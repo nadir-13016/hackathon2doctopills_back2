@@ -6,7 +6,10 @@ module.exports = app => {
         models  
             .InfoPatient
             .findAll({
-                include : [models.DataPatient]
+                include : [models.DataPatient],
+                where :{
+                        id: 1
+                    } 
             })
             .then(x=> res.json(x))
     } )

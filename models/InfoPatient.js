@@ -20,25 +20,25 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.BOOLEAN
         },
         infoPatient_allergy1: {
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
         },
         infoPatient_allergy2: {
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
         },
         infoPatient_allergy3: {
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
         },
         infoPatient_chronic_condition: {
             type: DataTypes.BOOLEAN
         },
         infoPatient_chronic_condition1: {
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
         },
         infoPatient_chronic_condition2: {
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
         },
         infoPatient_chronic_condition3: {
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
         },
         infoPatient_been_surgered:{ 
             type: DataTypes.BOOLEAN
