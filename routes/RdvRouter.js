@@ -2,7 +2,7 @@ const models = require('../models')
 
 module.exports = app => {
     // Get every Rdv
-    app.get('/Rdvs', (req, res)=>{
+    app.get('/rdvs', (req, res)=>{
         models  
             .Rdv
             .findAll()
@@ -10,7 +10,7 @@ module.exports = app => {
     } )
 
     // create new Rdv
-    app.post('/Rdvs', (req, res)=>{
+    app.post('/rdvs', (req, res)=>{
         models  
             .Rdv
             .create(req.body)
@@ -19,7 +19,7 @@ module.exports = app => {
 
     // delete a Rdv by his Id
     
-    app.delete('/Rdvs/:id', (req, res)=>{
+    app.delete('/rdvs/:id', (req, res)=>{
         models  
             .Rdv
             .destroy(req.params.id)

@@ -11,9 +11,16 @@ module.exports = (sequelize, DataTypes) => {
        rdv_docteur: {
         type: DataTypes.STRING
     },
-        rdv_reccurence: {
-            type: DataTypes.INTEGER
-        },
+    rdv_speciality: {
+        type: DataTypes.STRING
+    },
+        rdv_adress: {
+        type: DataTypes.STRING
+    },
+    rdv_reccurence: {
+        type: DataTypes.INTEGER
+    },
+
        rdv_confirmed: {
         type: DataTypes.BOOLEAN
     }
