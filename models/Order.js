@@ -11,6 +11,12 @@ module.exports = (sequelize, DataTypes) => {
         order_duration:{ 
             type: DataTypes.INTEGER
           },
+        order_pdf: {
+          type : DataTypes.BLOB
+        },
+        order_qrcode: {
+          type : DataTypes.BLOB
+        },
         order_renew:{ 
             type: DataTypes.BOOLEAN
           },
