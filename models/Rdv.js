@@ -17,10 +17,10 @@ module.exports = (sequelize, DataTypes) => {
        rdv_confirmed: {
         type: DataTypes.BOOLEAN
     }
-    }, 
-    // Rdv.associate = models => {
-    //     Rdv.belongsTo(models.User)
-    // }
-     );
+    }) 
+    Rdv.associate = models => {
+        Rdv.belongsTo(models.User)
+    }
+     ;
     return Rdv;
 }

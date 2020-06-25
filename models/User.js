@@ -35,13 +35,17 @@ module.exports = (sequelize, DataTypes) => {
         user_accept_CGV : {
             type : DataTypes.BOOLEAN,
             allowNull: false
-        },
+        }
+    }) 
 
+    User.associate = models => {
+        User.hasMany(models.Medecin)
+        User.hasMany(models.Rdv)
+        User.hasMany(models.Order)
+        User.hasMany(models.Pills)
+        User.hasOne(models.InfoPatient)
 
-    } , 
-    // User.associate = models => {
-    //     User.hasMany(models.Medecin)
-    // }
-);
+    }
+
     return User;
 }

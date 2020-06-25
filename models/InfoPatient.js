@@ -46,11 +46,12 @@ module.exports = (sequelize, DataTypes) => {
         infoPatient_blood_type:{ 
             type: DataTypes.STRING
           }
-    }, 
-    // InfoPatient.associate = models => {
-    //     InfoPatient.belongsTo(models.User)
-    // }
-    );
+    }) 
+    InfoPatient.associate = models => {
+        InfoPatient.belongsTo(models.User)
+        InfoPatient.hasMany(models.DataPatient)
+    }
+     
 
     return InfoPatient;
 }

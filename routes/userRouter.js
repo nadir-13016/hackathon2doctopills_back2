@@ -1,6 +1,6 @@
 const models = require('../models')
 
-modules.exports= app => {
+module.exports = app => {
     app.get('/users', (req, res)=>{
         models  
             .User

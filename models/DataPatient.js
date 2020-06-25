@@ -14,11 +14,11 @@ module.exports = (sequelize, DataTypes) => {
         dataPatient_exam_file: { 
             type: DataTypes.BLOB
           },
-    }  , 
+    })   
     
-    // DataPatient.associate = models => {
-    //     DataPatient.belongsTo(models.InfoPatient)
-    // }
-    );
+    DataPatient.associate = models => {
+        DataPatient.belongsTo(models.InfoPatient)
+    }
+    
     return DataPatient;
 }
