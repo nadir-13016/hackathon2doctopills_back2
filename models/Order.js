@@ -3,7 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
     const Order = sequelize.define('Order',{
         order_date:{ 
-            type: DataTypes.DATEONLY
+            type: DataTypes.STRING
           },
         order_medecin:{ 
             type: DataTypes.STRING
@@ -12,10 +12,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER
           },
         order_pdf: {
-          type : DataTypes.BLOB
+          type : DataTypes.STRING
         },
         order_qrcode: {
-          type : DataTypes.BLOB
+          type : DataTypes.STRING
         },
         order_renew:{ 
             type: DataTypes.BOOLEAN

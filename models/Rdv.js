@@ -3,10 +3,10 @@
 module.exports = (sequelize, DataTypes) => {
     const Rdv = sequelize.define('Rdv',{
        rdv_date:  {
-            type: DataTypes.DATEONLY
+            type: DataTypes.STRING
         },
        rdv_heure: {
-        type: DataTypes.TIME
+        type: DataTypes.STRING
     },
        rdv_docteur: {
         type: DataTypes.STRING
@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING
     },
     rdv_reccurence: {
-        type: DataTypes.INTEGER
+        type: DataTypes.STRING
     },
 
        rdv_confirmed: {
